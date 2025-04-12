@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ScalaSbtSettings">
     <option name="customLauncherEnabled" value="true" />
-    <option name="customLauncherPath" value="$SBT_HOME$/bin/sbt.bat" />
+    <option name="customLauncherPath" value="$PROJECT_DIR$/../../../../Program Files/sbt/bin/sbt.bat" />
     <option name="customVMPath" />
     <option name="linkedExternalProjectsSettings">
       <SbtProjectSettings>

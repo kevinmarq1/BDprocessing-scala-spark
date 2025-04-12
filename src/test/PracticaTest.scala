@@ -1,6 +1,9 @@
 class PracticaTest {
   import org.scalatest.flatspec.AnyFlatSpec
   import java.io.{ByteArrayOutputStream, PrintStream}
+  package job.examen
+
+  import org.apache.spark.sql.SparkSession
 
   class PracticaTest extends AnyFlatSpec {
     "The main method" should "print Hello world!" in {
@@ -13,6 +16,14 @@ class PracticaTest {
 
       // Validar el resultado
       assert(outCapture.toString.trim == "Hello world!")
+    }
+  }
+  import SparkSessionProvider.spark
+
+  object TestEjercicio3 {
+    def main(args: Array[String]): Unit = {
+      val resultados = examen.ejercicio3()
+      resultados.show()
     }
   }
 
