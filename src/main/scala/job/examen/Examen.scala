@@ -4,9 +4,10 @@ import org.apache.spark.sql.{DataFrame, SparkSession}
 import org.apache.spark.sql.functions._
 import job.examen.SparkSessionProvider.spark
 import spark.implicits._
+import org.apache.spark.rdd.RDD
 
-object examen {
 
+object Examen {
   // **Definición de DataFrames Compartidos**
   val estudiantes: DataFrame = Seq(
     (1, "Kevin", "Márquez", 25),
@@ -60,4 +61,47 @@ object examen {
 
     resultado
   }
+  // ejercicio 4 : RDDs y conteo de palabras
+  def ejercicio4()(implicit spark: SparkSession): Unit = {
+    // Lista de palabras de ejemplo
+    val palabras = List("error", "warning", "error", "debug", "error", "info", "warning")
+
+    // Crear un RDD desde la lista
+    val palabrasRDD: RDD[String] = spark.sparkContext.parallelize(palabras)
+
+    // Contar las ocurrencias de cada palabra
+    val conteoPalabrasRDD: RDD[(String, Int)] = palabrasRDD.map(palabra => (palabra, 1)).reduceByKey(_ + _)
+
+    // Mostrar los resultados
+    println("\n--- Resultados del Ejercicio 4 ---")
+    println("Frecuencia de palabras:")
+    conteoPalabrasRDD.collect().foreach { case (palabra, frecuencia) =>
+      println(s"$palabra: $frecuencia")
+    }
+  }
+  // Ejercicio 5 : cargar csv y procesar los datos
+  def ejercicio5()(implicit spark: SparkSession): Unit = {
+    // Archivo CSV para el análisis
+    val rutaArchivo = "C:/Users/Admin/IdeaProjects/Practica/src/ventas.csv"
+
+    val ventasDF = spark.read
+      .option("header", "true") // El archivo incluye encabezados
+      .option("inferSchema", "true") // Inferir automáticamente los tipos de datos
+      .csv(rutaArchivo)
+    // Mostrar algunos datos del archivo
+    println("\nDatos iniciales:")
+    ventasDF.show()
+
+    // Calcular ingreso total para cada producto
+    val ingresoTotalDF = ventasDF
+      .withColumn("ingreso_total", col("cantidad") * col("precio_unitario"))
+      .groupBy("id_producto")
+      .agg(sum("ingreso_total").alias("ingreso_total"))
+
+    // Resultados finales
+    println("\nIngreso Total por Producto:")
+    ingresoTotalDF.show()
+  }
+
 }
+

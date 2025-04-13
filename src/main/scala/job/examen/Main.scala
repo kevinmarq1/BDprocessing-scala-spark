@@ -7,12 +7,19 @@ object Main {
     implicit val spark: SparkSession = SparkSessionProvider.spark
 
     println("\n--- Ejercicio 1 ---")
-    examen.ejercicio1()
+    Examen.ejercicio1()
 
     println("\n--- Ejercicio 2 ---")
-    examen.ejercicio2()
+    Examen.ejercicio2()
 
     println("\n--- Ejercicio 3 ---")
-    examen.ejercicio3()
+    Examen.ejercicio3()
+
+    println("\n--- Ejercicio 4 ---")
+    Examen.ejercicio4()
+
+    println("\n--- Ejercicio 5 ---")
+    Examen.ejercicio5()
+
   }
 }
