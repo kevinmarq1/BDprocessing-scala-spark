@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="ALL" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="04bd41fd-6287-4245-890a-00c7adb93386" name="Changes" comment="Ejercicio 4/5" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="SBT">
+      <state>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="Practica" type="f1a62948:ProjectNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="Practica" type="f1a62948:ProjectNode" />
+                <item name="sbt commands" type="5c424813:SbtViewContributor$SbtCommandsGroupNode" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="ScalaTest Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;kevinmarq1&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/kevinmarq1/BDprocessing-scala-spark.git&quot;,
+    &quot;accountId&quot;: &quot;abf249df-8960-4dc2-9772-24221e49945a&quot;
+  }
+}</component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/src/main/scala/job/examen/Examen.scala" root0="SKIP_INSPECTION" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="2" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 3
+}</component>
+  <component name="ProjectId" id="2vSL9X5RSU7oV3Reuj7xWtzHkEf" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Application.job.examen.Main.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;ScalaTest.examenTest.executor&quot;: &quot;Run&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;ScalaTest&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.ScalaTest&quot;: &quot;org.scalatest.funsuite.AnyFunSuiteLike&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_directory_selection&quot;: &quot;C:/Users/Admin/IdeaProjects/Practica/src/test/scala&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Program Files/sbt/bin/sbt.bat&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;SDKs&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.build.tools.auto.reload&quot;: &quot;ALL&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Admin\IdeaProjects\Practica\src\main\scala\job\examen" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="org.scalatest.funsuite.AnyFunSuiteLike" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="job.examen" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.job.examen.Main">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="Practica.main" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="job.examen.Main" type="Application" factoryName="Application" temporary="true">
+      <option name="ALTERNATIVE_JRE_PATH" value="$PROJECT_DIR$/../../../../Program Files (x86)/Eclipse Adoptium/jdk-11.0.26.4-hotspot" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="MAIN_CLASS_NAME" value="job.examen.Main" />
+      <module name="Practica" />
+      <option name="VM_PARAMETERS" value="-Xmx512m " />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="job.examen.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="examenTest" type="ScalaTestRunConfiguration" factoryName="ScalaTest" temporary="true" nameIsGenerated="true" show_console_on_std_err="false" show_console_on_std_out="false">
+      <module name="Practica.test" />
+      <option name="VMParameters" value="" />
+      <option name="allowRunningInParallel" value="false" />
+      <option name="alternativeJrePath" />
+      <option name="alternativeJrePathEnabled" value="false" />
+      <option name="classpathModifications">
+        <list />
+      </option>
+      <option name="envFilePaths">
+        <list />
+      </option>
+      <option name="envs">
+        <map />
+      </option>
+      <option name="passParentEnvs" value="true" />
+      <option name="programParameters" value="" />
+      <option name="projectPathOnTarget" />
+      <option name="selectedOptions">
+        <list />
+      </option>
+      <option name="testKind" value="Class" />
+      <option name="workingDirectory" value="C:\Users\Admin\IdeaProjects\Practica" />
+      <option name="testClassPath" value="job.examen.examenTest" />
+      <option name="workingDirectory" value="C:\Users\Admin\IdeaProjects\Practica" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.job.examen.Main" />
+      <item itemvalue="Application.Main" />
+      <item itemvalue="ScalaTest.examenTest" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.job.examen.Main" />
+        <item itemvalue="ScalaTest.examenTest" />
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ScalaProjectSettings">
+    <option name="migrateConfigurationsNotificationShown" value="true" />
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-a94e463ab2e7-intellij.indexing.shared.core-IU-243.26053.27" />
+        <option value="bundled-js-predefined-d6986cc7102b-1632447f56bf-JavaScript-IU-243.26053.27" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="04bd41fd-6287-4245-890a-00c7adb93386" name="Changes" comment="" />
+      <created>1744133388996</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1744133388996</updated>
+      <workItem from="1744133390163" duration="5146000" />
+      <workItem from="1744138599777" duration="539000" />
+      <workItem from="1744139154160" duration="1709000" />
+      <workItem from="1744140890197" duration="1175000" />
+      <workItem from="1744305511467" duration="1807000" />
+      <workItem from="1744307387170" duration="1610000" />
+      <workItem from="1744309050394" duration="1165000" />
+      <workItem from="1744310243392" duration="167000" />
+      <workItem from="1744310439538" duration="178000" />
+      <workItem from="1744310632022" duration="195000" />
+      <workItem from="1744310839235" duration="1148000" />
+      <workItem from="1744452725293" duration="3039000" />
+      <workItem from="1744456015043" duration="604000" />
+      <workItem from="1744456632968" duration="595000" />
+      <workItem from="1744457242296" duration="646000" />
+      <workItem from="1744457926077" duration="1453000" />
+      <workItem from="1744459398871" duration="331000" />
+      <workItem from="1744459739336" duration="48000" />
+      <workItem from="1744459799304" duration="1157000" />
+      <workItem from="1744461455897" duration="680000" />
+      <workItem from="1744462159246" duration="67000" />
+      <workItem from="1744462239280" duration="3148000" />
+      <workItem from="1744533362259" duration="2430000" />
+      <workItem from="1745154339928" duration="824000" />
+      <workItem from="1745155186950" duration="333000" />
+      <workItem from="1745155531901" duration="990000" />
+      <workItem from="1745156538822" duration="369000" />
+      <workItem from="1745156920083" duration="446000" />
+      <workItem from="1745157378390" duration="70000" />
+    </task>
+    <task id="LOCAL-00001" summary="config/ejercicio 1y2">
+      <option name="closed" value="true" />
+      <created>1744311516214</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1744311516214</updated>
+    </task>
+    <task id="LOCAL-00002" summary="config/ejercicio 1y2">
+      <option name="closed" value="true" />
+      <created>1744462397445</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1744462397445</updated>
+    </task>
+    <task id="LOCAL-00003" summary="config/ejercicio 1y2">
+      <option name="closed" value="true" />
+      <created>1744462421845</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1744462421845</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Ejercicio 4/5">
+      <option name="closed" value="true" />
+      <created>1744534521168</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1744534521168</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Ejercicio 4/5">
+      <option name="closed" value="true" />
+      <created>1744534539813</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1744534539813</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="config/ejercicio 1y2" />
+    <MESSAGE value="Ejercicio 4/5" />
+    <option name="LAST_COMMIT_MESSAGE" value="Ejercicio 4/5" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.StackOverflowError" package="java.lang" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>
