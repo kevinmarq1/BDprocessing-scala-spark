@@ -82,7 +82,7 @@ object Examen {
   // Ejercicio 5 : cargar csv y procesar los datos
   def ejercicio5()(implicit spark: SparkSession): Unit = {
     // Archivo CSV para el análisis
-    val rutaArchivo = "C:/Users/Admin/IdeaProjects/Practica/src/sources/ventas.csv"
+    val rutaArchivo = "C:/Users/Admin/IdeaProjects/Practica/src/resources/ventas.csv"
 
     val ventasDF = spark.read
       .option("header", "true") // El archivo incluye encabezados
