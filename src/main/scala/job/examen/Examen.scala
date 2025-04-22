@@ -30,78 +30,50 @@ object Examen {
     (5, "Educación Física", 6.0, "No")
   ).toDF("id", "materia", "calificacion", "apto")
 
+  val numeros: DataFrame = Seq(1, 2, 3, 4, 5, 6).toDF("numero")
+  val palabras: List[String] = List("error", "warning", "error", "debug", "error", "info", "warning")
+  val rutaArchivo = "src/resources/ventas.csv"
+  val ventasDF: DataFrame = spark.read
+    .option("header", "true")
+    .option("inferSchema", "true")
+    .csv(rutaArchivo)
+
+
   // **Ejercicio 1: Operaciones Básicas con DataFrames**
-  def ejercicio1()(implicit spark: SparkSession): DataFrame = {
+  def ejercicio1(estudiantes: DataFrame): DataFrame = {
     val filtroEdad = estudiantes.filter(col("edad") > 20)
     val nombresOrdenados = filtroEdad
       .select("nombre", "edad")
       .orderBy(col("edad").desc)
-    nombresOrdenados.show()
-
     nombresOrdenados
   }
 
   // **Ejercicio 2: UDF (User Defined Function)**
-  def ejercicio2()(implicit spark: SparkSession): DataFrame = {
-    val numeros = Seq(1, 2, 3, 4, 5, 6).toDF("numero")
+  def ejercicio2(numeros: DataFrame): DataFrame = {
     val esPar = udf((n: Int) => if (n % 2 == 0) "par" else "impar")
-    val resultado = numeros.withColumn("paridad", esPar($"numero"))
-    resultado.show()
-
-    resultado
+    numeros.withColumn("paridad", esPar($"numero"))
   }
 
   // **Ejercicio 3: Joins y Agregaciones**
-  def ejercicio3()(implicit spark: SparkSession): DataFrame = {
-    val datosCompletos = estudiantes.join(calificaciones, "id")
-    val resultado = datosCompletos
-      .groupBy("nombre")
-      .agg(avg("calificacion").alias("promedio"))
-    resultado.show()
-
-    resultado
+  def ejercicio3(estudiantes: DataFrame, calificaciones: DataFrame): DataFrame = {
+    val datosCompletos = estudiantes.join(calificaciones, "id") // Join por la columna "id"
+    datosCompletos
+      .groupBy("nombre") // Agrupa los datos por el nombre
+      .agg(avg("calificacion").alias("promedio")) // Calcula el promedio de las calificaciones
   }
+
   // ejercicio 4 : RDDs y conteo de palabras
-  def ejercicio4()(implicit spark: SparkSession): Unit = {
-    // Lista de palabras de ejemplo
-    val palabras = List("error", "warning", "error", "debug", "error", "info", "warning")
-
-    // Crear un RDD desde la lista
+  def ejercicio4(palabras: List[String])(implicit spark: SparkSession): RDD[(String, Int)] = {
     val palabrasRDD: RDD[String] = spark.sparkContext.parallelize(palabras)
-
-    // Contar las ocurrencias de cada palabra
-    val conteoPalabrasRDD: RDD[(String, Int)] = palabrasRDD.map(palabra => (palabra, 1)).reduceByKey(_ + _)
-
-    // Mostrar los resultados
-    println("\n--- Resultados del Ejercicio 4 ---")
-    println("Frecuencia de palabras:")
-    conteoPalabrasRDD.collect().foreach { case (palabra, frecuencia) =>
-      println(s"$palabra: $frecuencia")
-    }
+    palabrasRDD.map(palabra => (palabra, 1)).reduceByKey(_ + _)
   }
+
   // Ejercicio 5 : cargar csv y procesar los datos
-  def ejercicio5()(implicit spark: SparkSession): Unit = {
-    // Archivo CSV para el análisis
-    val rutaArchivo = "C:/Users/Admin/IdeaProjects/Practica/src/resources/ventas.csv"
-
-    val ventasDF = spark.read
-      .option("header", "true") // El archivo incluye encabezados
-      .option("inferSchema", "true") // Inferir automáticamente los tipos de datos
-      .csv(rutaArchivo)
-    // Mostrar algunos datos del archivo
-    println("\nDatos iniciales:")
-    ventasDF.show()
-
-    // Calcular ingreso total para cada producto
-    val ingresoTotalDF = ventasDF
+  def ejercicio5(ventasDF: DataFrame): DataFrame = {
+    ventasDF
       .withColumn("ingreso_total", col("cantidad") * col("precio_unitario"))
       .groupBy("id_producto")
       .agg(sum("ingreso_total").alias("ingreso_total"))
-
-    // Resultados finales
-    println("\nIngreso Total por Producto:")
-    ingresoTotalDF.show()
   }
-
 }
 

@@ -4,7 +4,13 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="04bd41fd-6287-4245-890a-00c7adb93386" name="Changes" comment="Ejercicio 4/5" />
+    <list default="true" id="04bd41fd-6287-4245-890a-00c7adb93386" name="Changes" comment="Ejercicio 4/5">
+      <change beforePath="$PROJECT_DIR$/.idea/sbt.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sbt.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/job/examen/Examen.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/job/examen/Examen.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/job/examen/Main.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/job/examen/Main.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/examenTest.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/examenTest.scala" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -97,11 +103,11 @@
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;SDKs&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
     &quot;settings.build.tools.auto.reload&quot;: &quot;ALL&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;sbt.project.settings.configurable&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
@@ -229,7 +235,11 @@
       <workItem from="1745155531901" duration="990000" />
       <workItem from="1745156538822" duration="369000" />
       <workItem from="1745156920083" duration="446000" />
-      <workItem from="1745157378390" duration="70000" />
+      <workItem from="1745157378390" duration="710000" />
+      <workItem from="1745158800741" duration="94000" />
+      <workItem from="1745342813040" duration="4520000" />
+      <workItem from="1745347926507" duration="1339000" />
+      <workItem from="1745349304219" duration="36000" />
     </task>
     <task id="LOCAL-00001" summary="config/ejercicio 1y2">
       <option name="closed" value="true" />
