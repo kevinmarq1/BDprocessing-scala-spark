@@ -4,8 +4,8 @@ import org.apache.spark.sql.SparkSession
 
 object Main {
   def main(args: Array[String]): Unit = {
-    // Inicializa la sesión de Spark desde TestInit
-    implicit val spark: SparkSession = TestInit.initialize()
+    // Inicializa la sesión de Spark
+    implicit val spark: SparkSession = SparkSessionProvider.spark
 
     println("\n--- Ejercicio 1 ---")
     Examen.ejercicio1(Examen.estudiantes).show()
@@ -23,5 +23,8 @@ object Main {
 
     println("\n--- Ejercicio 5 ---")
     Examen.ejercicio5(Examen.ventasDF).show()
+
+    // Libera recursos de Spark
+    spark.stop()
   }
 }

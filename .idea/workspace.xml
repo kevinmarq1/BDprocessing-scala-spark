@@ -5,14 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="04bd41fd-6287-4245-890a-00c7adb93386" name="Changes" comment="Ejercicio 4/5">
-      <change beforePath="$PROJECT_DIR$/.idea/sbt.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sbt.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/scala_compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/scala_compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.sbt" beforeDir="false" afterPath="$PROJECT_DIR$/build.sbt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/scala/job/examen/Main.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/job/examen/Main.scala" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/scala/job/examen/SparkSessionProvider.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/job/examen/SparkSessionProvider.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/TestInit.scala" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/examenTest.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/job/examen/TestInit.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/job/examen/TestInit.scala" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,17 +25,7 @@
       <state>
         <projects_view>
           <tree_state>
-            <expand>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="Practica" type="f1a62948:ProjectNode" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="Practica" type="f1a62948:ProjectNode" />
-                <item name="sbt commands" type="5c424813:SbtViewContributor$SbtCommandsGroupNode" />
-              </path>
-            </expand>
+            <expand />
             <select />
           </tree_state>
         </projects_view>
@@ -260,7 +246,12 @@
       <workItem from="1745355142054" duration="43000" />
       <workItem from="1745355293020" duration="571000" />
       <workItem from="1745355886447" duration="283000" />
-      <workItem from="1745356189410" duration="37000" />
+      <workItem from="1745356189410" duration="829000" />
+      <workItem from="1745357032208" duration="156000" />
+      <workItem from="1745357406392" duration="74000" />
+      <workItem from="1745357490159" duration="131000" />
+      <workItem from="1745357631575" duration="563000" />
+      <workItem from="1745358210674" duration="32000" />
     </task>
     <task id="LOCAL-00001" summary="config/ejercicio 1y2">
       <option name="closed" value="true" />
