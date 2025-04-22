@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ScalaSbtSettings">
-    <option name="customLauncherPath" />
-    <option name="customVMPath" />
+    <option name="customLauncherEnabled" value="true" />
+    <option name="customLauncherPath" value="$PROJECT_DIR$/../../../../Program Files/sbt/bin/sbt-launch.jar" />
+    <option name="customVMEnabled" value="true" />
+    <option name="customVMPath" value="$PROJECT_DIR$/../../../../Program Files (x86)/Eclipse Adoptium/jdk-11.0.26.4-hotspot" />
     <option name="linkedExternalProjectsSettings">
       <SbtProjectSettings>
         <option name="converterVersion" value="2" />
@@ -13,7 +15,9 @@
             <option value="$PROJECT_DIR$/project" />
           </set>
         </option>
+        <option name="resolveSbtClassifiers" value="true" />
         <option name="sbtVersion" value="1.10.11" />
+        <option name="separateProdAndTestSources" value="true" />
         <option name="useSbtShellForBuild" value="true" />
         <option name="useSbtShellForImport" value="true" />
       </SbtProjectSettings>

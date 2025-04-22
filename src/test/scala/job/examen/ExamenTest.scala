@@ -1,14 +1,15 @@
 package job.examen
 
-import org.apache.spark.sql.DataFrame
+import org.apache.spark.sql.SparkSession
+import org.apache.spark.sql.functions._
 import org.scalatest.flatspec.AnyFlatSpec
 import org.scalatest.matchers.should.Matchers
-import org.apache.spark.rdd.RDD
 
-class examenTest extends AnyFlatSpec with Matchers {
+class ExamenTest extends AnyFlatSpec with Matchers {
 
-  // Usa la sesión de Spark definida en TestInit
-  implicit val spark = TestInit.initialize()
+  // Inicializa la sesión de Spark desde TestInit
+  implicit val spark: SparkSession = SparkSessionProvider.spark
+  import spark.implicits._
 
   // **Test para Ejercicio 1**
   "Ejercicio 1" should "filtrar estudiantes mayores de 20 años y ordenarlos por edad" in {

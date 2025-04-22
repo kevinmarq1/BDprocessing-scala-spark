@@ -6,10 +6,13 @@
   <component name="ChangeListManager">
     <list default="true" id="04bd41fd-6287-4245-890a-00c7adb93386" name="Changes" comment="Ejercicio 4/5">
       <change beforePath="$PROJECT_DIR$/.idea/sbt.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sbt.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/scala_compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/scala_compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/job/examen/Examen.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/job/examen/Examen.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.sbt" beforeDir="false" afterPath="$PROJECT_DIR$/build.sbt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/scala/job/examen/Main.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/job/examen/Main.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/examenTest.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/examenTest.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/job/examen/SparkSessionProvider.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/job/examen/SparkSessionProvider.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/TestInit.scala" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/examenTest.scala" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,6 +50,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="ScalaTest Class" />
+        <option value="Scala Class" />
       </list>
     </option>
   </component>
@@ -90,6 +94,7 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;ScalaTest.ExamenTest.executor&quot;: &quot;Run&quot;,
     &quot;ScalaTest.examenTest.executor&quot;: &quot;Run&quot;,
     &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;ScalaTest&quot;,
     &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.ScalaTest&quot;: &quot;org.scalatest.funsuite.AnyFunSuiteLike&quot;,
@@ -97,13 +102,13 @@
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
     &quot;last_directory_selection&quot;: &quot;C:/Users/Admin/IdeaProjects/Practica/src/test/scala&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Program Files/sbt/bin/sbt.bat&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Program Files/sbt/bin/sbt-launch.jar&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
     &quot;settings.build.tools.auto.reload&quot;: &quot;ALL&quot;,
@@ -122,7 +127,7 @@
       <recent name="job.examen" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.job.examen.Main">
+  <component name="RunManager" selected="ScalaTest.ExamenTest">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="Practica.main" />
@@ -134,11 +139,11 @@
       <option name="ALTERNATIVE_JRE_PATH" value="$PROJECT_DIR$/../../../../Program Files (x86)/Eclipse Adoptium/jdk-11.0.26.4-hotspot" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
       <option name="MAIN_CLASS_NAME" value="job.examen.Main" />
-      <module name="Practica" />
+      <module name="Practica.main" />
       <option name="VM_PARAMETERS" value="-Xmx512m " />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="job.examen.*" />
+          <option name="PATTERN" value="job.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -146,8 +151,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="examenTest" type="ScalaTestRunConfiguration" factoryName="ScalaTest" temporary="true" nameIsGenerated="true" show_console_on_std_err="false" show_console_on_std_out="false">
-      <module name="Practica.test" />
+    <configuration name="ExamenTest" type="ScalaTestRunConfiguration" factoryName="ScalaTest" show_console_on_std_err="false" show_console_on_std_out="false">
+      <module name="Practica" />
       <option name="VMParameters" value="" />
       <option name="allowRunningInParallel" value="false" />
       <option name="alternativeJrePath" />
@@ -167,9 +172,16 @@
       <option name="selectedOptions">
         <list />
       </option>
-      <option name="testKind" value="Class" />
+      <option name="testKind" value="All in package" />
       <option name="workingDirectory" value="C:\Users\Admin\IdeaProjects\Practica" />
-      <option name="testClassPath" value="job.examen.examenTest" />
+      <option name="classBuf">
+        <list>
+          <option value="job.examen.ExamenTest" />
+        </list>
+      </option>
+      <option name="searchTest" value="In whole project" />
+      <option name="shortenClasspath" value="NONE" />
+      <option name="testPackagePath" value="job.examen" />
       <option name="workingDirectory" value="C:\Users\Admin\IdeaProjects\Practica" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -178,12 +190,11 @@
     <list>
       <item itemvalue="Application.job.examen.Main" />
       <item itemvalue="Application.Main" />
-      <item itemvalue="ScalaTest.examenTest" />
+      <item itemvalue="ScalaTest.ExamenTest" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Application.job.examen.Main" />
-        <item itemvalue="ScalaTest.examenTest" />
         <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
@@ -239,7 +250,17 @@
       <workItem from="1745158800741" duration="94000" />
       <workItem from="1745342813040" duration="4520000" />
       <workItem from="1745347926507" duration="1339000" />
-      <workItem from="1745349304219" duration="36000" />
+      <workItem from="1745349304219" duration="1085000" />
+      <workItem from="1745350411129" duration="1106000" />
+      <workItem from="1745351535766" duration="1877000" />
+      <workItem from="1745353439441" duration="55000" />
+      <workItem from="1745353897748" duration="408000" />
+      <workItem from="1745354316218" duration="476000" />
+      <workItem from="1745354806879" duration="322000" />
+      <workItem from="1745355142054" duration="43000" />
+      <workItem from="1745355293020" duration="571000" />
+      <workItem from="1745355886447" duration="283000" />
+      <workItem from="1745356189410" duration="37000" />
     </task>
     <task id="LOCAL-00001" summary="config/ejercicio 1y2">
       <option name="closed" value="true" />
