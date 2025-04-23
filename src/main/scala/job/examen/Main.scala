@@ -24,7 +24,6 @@ object Main {
     println("\n--- Ejercicio 5 ---")
     Examen.ejercicio5(Examen.ventasDF).show()
 
-    // Libera recursos de Spark
     spark.stop()
   }
 }

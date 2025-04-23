@@ -5,10 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="04bd41fd-6287-4245-890a-00c7adb93386" name="Changes" comment="Ejercicio 4/5">
+      <change beforePath="$PROJECT_DIR$/.idea/sbt.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sbt.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/scala_compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/scala_compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.sbt" beforeDir="false" afterPath="$PROJECT_DIR$/build.sbt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/scala/job/examen/Main.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/job/examen/Main.scala" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/scala/job/examen/SparkSessionProvider.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/job/examen/SparkSessionProvider.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/job/examen/TestInit.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/job/examen/TestInit.scala" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,7 +27,12 @@
       <state>
         <projects_view>
           <tree_state>
-            <expand />
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="Practica" type="f1a62948:ProjectNode" />
+              </path>
+            </expand>
             <select />
           </tree_state>
         </projects_view>
@@ -80,6 +87,7 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;ScalaTest.ExamenTest (1).executor&quot;: &quot;Run&quot;,
     &quot;ScalaTest.ExamenTest.executor&quot;: &quot;Run&quot;,
     &quot;ScalaTest.examenTest.executor&quot;: &quot;Run&quot;,
     &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;ScalaTest&quot;,
@@ -114,18 +122,11 @@
     </key>
   </component>
   <component name="RunManager" selected="ScalaTest.ExamenTest">
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="Main" />
-      <module name="Practica.main" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="job.examen.Main" type="Application" factoryName="Application" temporary="true">
       <option name="ALTERNATIVE_JRE_PATH" value="$PROJECT_DIR$/../../../../Program Files (x86)/Eclipse Adoptium/jdk-11.0.26.4-hotspot" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
       <option name="MAIN_CLASS_NAME" value="job.examen.Main" />
-      <module name="Practica.main" />
+      <module name="Practica" />
       <option name="VM_PARAMETERS" value="-Xmx512m " />
       <extension name="coverage">
         <pattern>
@@ -168,6 +169,7 @@
       <option name="searchTest" value="In whole project" />
       <option name="shortenClasspath" value="NONE" />
       <option name="testPackagePath" value="job.examen" />
+      <option name="useSbt" value="true" />
       <option name="workingDirectory" value="C:\Users\Admin\IdeaProjects\Practica" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -175,13 +177,11 @@
     </configuration>
     <list>
       <item itemvalue="Application.job.examen.Main" />
-      <item itemvalue="Application.Main" />
       <item itemvalue="ScalaTest.ExamenTest" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Application.job.examen.Main" />
-        <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -251,7 +251,11 @@
       <workItem from="1745357406392" duration="74000" />
       <workItem from="1745357490159" duration="131000" />
       <workItem from="1745357631575" duration="563000" />
-      <workItem from="1745358210674" duration="32000" />
+      <workItem from="1745358210674" duration="376000" />
+      <workItem from="1745431596503" duration="514000" />
+      <workItem from="1745432128827" duration="1199000" />
+      <workItem from="1745433350553" duration="493000" />
+      <workItem from="1745433861092" duration="61000" />
     </task>
     <task id="LOCAL-00001" summary="config/ejercicio 1y2">
       <option name="closed" value="true" />
