@@ -6,11 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="04bd41fd-6287-4245-890a-00c7adb93386" name="Changes" comment="Ejercicio 4/5">
       <change beforePath="$PROJECT_DIR$/.idea/sbt.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sbt.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/scala_compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/scala_compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.sbt" beforeDir="false" afterPath="$PROJECT_DIR$/build.sbt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/job/examen/Main.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/job/examen/Main.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/job/examen/SparkSessionProvider.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/job/examen/SparkSessionProvider.scala" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -102,11 +98,11 @@
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;SDKs&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
     &quot;settings.build.tools.auto.reload&quot;: &quot;ALL&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;sbt.project.settings.configurable&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.ide.settings.web.browsers&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
@@ -255,7 +251,8 @@
       <workItem from="1745431596503" duration="514000" />
       <workItem from="1745432128827" duration="1199000" />
       <workItem from="1745433350553" duration="493000" />
-      <workItem from="1745433861092" duration="61000" />
+      <workItem from="1745433861092" duration="1094000" />
+      <workItem from="1745434977142" duration="76000" />
     </task>
     <task id="LOCAL-00001" summary="config/ejercicio 1y2">
       <option name="closed" value="true" />
