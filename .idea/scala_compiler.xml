@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ScalaCompilerConfiguration">
-    <profile name="sbt 1" modules="Practica,Practica.main,Practica.test,practica_687" />
+    <profile name="sbt 1" modules="Big-Data-Processing,Practica,Practica.main,Practica.test,practica_687" />
   </component>
 </project>
