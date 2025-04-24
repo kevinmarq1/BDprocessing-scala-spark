@@ -3,9 +3,12 @@ package job.examen
 import org.apache.spark.sql.SparkSession
 
 object SparkSessionProvider {
-  lazy val spark: SparkSession = SparkSession.builder
-    .appName("Practica Examen")
-    .master("local[*]") // Usa la configuración predeterminada para recursos locales
+
+  // Inicialización de la sesión de Spark
+  lazy val spark: SparkSession = SparkSession.builder()
+    .appName("Examen Practica")
+    .master("local[*]")
+    .config("spark.serializer", "org.apache.spark.serializer.KryoSerializer")
     .getOrCreate()
 }
 

@@ -1,17 +1,19 @@
 package job.examen
 
-import org.apache.spark.sql.SparkSession
-import org.apache.spark.sql.functions._
+import org.apache.spark.sql.{DataFrame, SparkSession}
 import org.scalatest.flatspec.AnyFlatSpec
 import org.scalatest.matchers.should.Matchers
 
 class ExamenTest extends AnyFlatSpec with Matchers {
 
-  // Inicializa la sesión de Spark desde TestInit
-  implicit val spark: SparkSession = SparkSessionProvider.spark
+  implicit val spark: SparkSession = SparkSession.builder()
+    .appName("Examen Practica Test")
+    .master("local[*]")
+    .getOrCreate()
+
   import spark.implicits._
 
-  // **Test para Ejercicio 1**
+  // Test para Ejercicio 1
   "Ejercicio 1" should "filtrar estudiantes mayores de 20 años y ordenarlos por edad" in {
     val estudiantes = Seq(
       (1, "Kevin", "Márquez", 25),
@@ -22,7 +24,7 @@ class ExamenTest extends AnyFlatSpec with Matchers {
     ).toDF("id", "nombre", "apellido", "edad")
 
     val resultado = Examen.ejercicio1(estudiantes).collect()
-    resultado.map(row => (row.getString(0), row.getInt(1))) shouldBe List(
+    resultado.map(row => (row.getString(1), row.getInt(3))) shouldBe List(
       ("Luis", 30),
       ("Kevin", 25),
       ("Marta", 23),
@@ -30,7 +32,7 @@ class ExamenTest extends AnyFlatSpec with Matchers {
     )
   }
 
-  // **Test para Ejercicio 2**
+  // Test para Ejercicio 2
   "Ejercicio 2" should "añadir la columna paridad correctamente" in {
     val numeros = Seq(1, 2, 3, 4, 5).toDF("numero")
 
@@ -44,7 +46,7 @@ class ExamenTest extends AnyFlatSpec with Matchers {
     )
   }
 
-  // **Test para Ejercicio 3**
+  // Test para Ejercicio 3
   "Ejercicio 3" should "calcular los promedios de calificaciones correctamente" in {
     val estudiantes = Seq(
       (1, "Kevin", "Márquez", 25),
@@ -69,11 +71,11 @@ class ExamenTest extends AnyFlatSpec with Matchers {
     )
   }
 
-  // **Test para Ejercicio 4**
+  // Test para Ejercicio 4
   "Ejercicio 4" should "contar palabras correctamente" in {
     val palabras = List("error", "warning", "error", "debug", "error", "info", "warning")
 
-    val resultado = Examen.ejercicio4(palabras).collect().toMap
+    val resultado = Examen.ejercicio4(palabras).collect().map(row => (row.getString(0), row.getLong(1))).toMap
     resultado shouldBe Map(
       "error" -> 3,
       "warning" -> 2,
@@ -82,7 +84,7 @@ class ExamenTest extends AnyFlatSpec with Matchers {
     )
   }
 
-  // **Test para Ejercicio 5**
+  // Test para Ejercicio 5
   "Ejercicio 5" should "calcular el ingreso total por producto" in {
     val ventas = Seq(
       (101, 2, 230.0),
